@@ -1,3 +1,9 @@
+$green: #00cb79;
+$clearBlue: #45b0e5;
+$mainGray: #cfcfcf;
+$darkGray: #444444;
+$font-primary: 'Montserrat', sans-serif;
+
 html {
     font-size: 62.5%; // 1rem is 10px
 }
@@ -25,4 +31,33 @@ body {
     margin-top: 2rem;
     display: grid;
     justify-items: center;
+}
+
+.backgroundSkew {
+    margin-top: -17rem;
+    padding-top: 17rem;
+    width: 100vw;
+    height: 700px;
+    background-color: $darkGray;
+    transform: skewY(-10deg);
+    border-bottom: 1rem solid $green;
+}
+
+.madlib-heading {
+    text-align: center;
+    margin: 20px;
+    padding-top: 46px;
+    color: white;
+    font-weight: 700;
+    font-family: $font-primary;
+}
+
+.madlib-subheading {
+    margin-bottom: 46px;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 15px;
+}
+
+.backgroundSkew > * {
+    transform: skewY(10deg);
 }
